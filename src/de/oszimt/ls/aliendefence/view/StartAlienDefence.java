@@ -8,7 +8,6 @@ import de.oszimt.ls.aliendefence.view.menue.MainMenu;
 public class StartAlienDefence {
 
 	public static void main(String[] args) {
-
 		IPersistance alienDefenceModel = new PersistanceDummy();//TODO new PersistanceDB();
 		AlienDefenceController alienDefenceController = new AlienDefenceController(alienDefenceModel);
 		MainMenu.show(alienDefenceController);
